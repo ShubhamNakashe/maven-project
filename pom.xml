@@ -15,6 +15,19 @@
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
+ <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use the latest version -->
+            <configuration>
+                <source>8</source> <!-- Set to your Java version (e.g., 8, 11, 16) -->
+                <target>8</target> <!-- Set to your Java version (e.g., 8, 11, 16) -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
   <modules>
     <module>server</module>
